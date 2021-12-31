@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #f2f2f2;
+        }
+        .card{
+            width: 200px;
+            height: 200px;
+            background-color: #fff;
+            margin: 20px;
+            display: inline-block;
+            border-radius: 2px;
+        }
+        .shadow-1{
+            box-shadow: 20px 20px;
+        }
+        .shadow-2{
+            box-shadow: 10px 10px rgba(0,0,0,0.5);
+        }
+        .shadow-3{
+            /*-webkit-*/box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.5);
+            -moz-box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.5); /*chrome mozilla gibi bazı tarayıcı sürümleri desteklemediği için bu şekilde yazmakta fayda var.*/
+        }
+        
+        .shadow-4:hover{
+            box-shadow: 30px 30px 30px 30px rgba(0,0,0,0.5);
+        }
+        .shadow-5{
+            box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.5) , 10px 10px 10px 10px rgba(0,0,0,0.5); /*Bu şekilde 2 tekrar gölgelendirme verebiliriz daha yoğun bir görüntü elde ediliyor.*/
+        }
+        .shadow-6{
+            box-shadow:royalblue 10px 10px 10px 10px;   
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="card shadow-1"></div>
+    <div class="card shadow-2"></div>
+    <div class="card shadow-3"></div>
+    <div class="card shadow-4"></div>
+    <div class="card shadow-5"></div>
+    <div class="card shadow-6"></div>
+
+    
+</body>
+</html>

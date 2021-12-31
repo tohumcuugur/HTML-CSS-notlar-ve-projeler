@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ids&Classes</title>
+    <!--    ""!important"" olarak tanımlanan değişken diğer bütün değişkenlerden öncelikli olarak uygulanır.
+    .yesil olarak tanımlanan kısım class olarak geçer. #renkfont olarak tanımlanan kısım id yani kimlik olarak geçer id olarak olarak tanımlanan kısım tek bir yerde kullanılabilir. yani ayrı ayrı yerlere aynı id ismi verilmesi doğru bulunmaz -->
+    <style>
+       
+        p{
+            color: blue;
+            font-size: 20px !important;  
+        }
+        .yesil{
+            font-size: 50px;
+            color: chartreuse;
+        }
+
+        #renkfont{
+            color: darkblue;
+            font-size: 30px;
+        }
+        .f40{
+            font-size: 40px;
+        }
+        #kahverengi{
+            color: brown;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    
+
+    <p class="yesil" >Komple uygulamalı web geliştirme</p>
+    <p id="renkfont">Komple uygulamalı web geliştirme</p>
+    <p style="color: brown;">Komple uygulamalı web geliştirme</p>
+    <p style="border: 1px solid red;">Komple uygulamalı web geliştirme</p>
+    <p class="f40" id="kahverengi" > Komple uygulamalı web geliştirme </p>
+
+
+    
+</body>
+</html>

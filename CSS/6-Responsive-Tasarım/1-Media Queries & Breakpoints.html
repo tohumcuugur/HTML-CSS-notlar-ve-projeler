@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="wievport" content="width=device-width">
+</head>
+<style>
+/*
+    h1{
+        font-size: 20px;
+    }
+    @media screen and (max-width:700px)
+    {
+        h1{
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width:400px) { MOBİL VE TABLET İÇİN SİTEYİ AYARLAMAK İÇİN KULLANIYORUZ. and kısmından sonra boşluk olmaz ise çalışmıyor yazım kısmına dikkat etmek gerek. Meta olarak yukarda name ve content girmek gerekiyor.
+        h1{
+            font-size: 12px;
+        }
+    }
+*/
+    * {
+        box-sizing: border-box;
+    }
+    .box{
+        width: 25%;
+        height: 250px;
+        border: solid 1px black;
+        background-color: brown;
+        float: left;
+    }
+    @media screen and (max-width: 700px){
+        .box{
+            width: 50%;
+            background-color: chartreuse;
+        }
+    }
+    @media screen and (max-width: 400px){
+        .box{
+            width: 100%;
+            background-color: cornflowerblue;
+        }
+    }
+
+</style>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</body>
+</html>

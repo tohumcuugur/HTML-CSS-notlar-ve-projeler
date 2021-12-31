@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:black;
+        }
+        #container{
+            width: 600px;
+            margin:40px;
+            box-shadow: 0 8px 16px 0 rgba(165, 157, 157 , 50);
+            transition: box-shadow 2s;
+        }
+            
+        #container:hover{
+            box-shadow: 0 16px 24px 0 rgba(165, 157, 157 , 50);
+        }
+        #main img{
+            width: 100%;
+            transition: opacity 200ms ease;
+            transition: 2s;
+            
+        } 
+        #main img:hover{
+            opacity: 0.8; /*opacity 0 ve 1 arasında değer alabilir. resmin opaklığını ayarlar*/
+            transform: rotate(360deg);
+            width: 600px;
+            height: 600px;
+        }
+
+        div[id="main"]{
+            padding: 0px;
+            float: left; /*division ve footer arasında bir boşluk kalıyordu pading ve margin ile hallolmadı en son float left yazınca oldu :) sola hizalı yaptık aradaki boşluk doldu :)*/     
+        }
+    
+        #footer h4{
+            background-color: snow;
+            
+        }
+        div[id="footer"] h4{
+            margin: 0px;
+            padding-top: 5px;
+            padding-left: 15px;
+        }
+        .sarkıcı{
+            padding-bottom: 10px;
+        }
+        .isim{
+            font-size: 22px;
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <div id="container">
+
+        <div id="main">
+            <img src="..//0-İmages/tarik-menguc-resimleri.jpg" alt="">
+        </div>
+        <div id="footer">
+            <h4 class="isim">Tarık Mengüç</h4>
+            <h4 class="sarkıcı">Şarkıcı</h4>
+        </div>
+    </div>
+
+    
+</body>
+</html>

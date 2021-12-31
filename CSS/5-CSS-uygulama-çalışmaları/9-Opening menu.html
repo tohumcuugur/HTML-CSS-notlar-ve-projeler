@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;   
+            position: absolute;    
+        }
+        li{
+            display: inline-block;
+            margin-right: 1px;
+            background-color: cadetblue;
+        }
+        li a{
+            display: block;
+            min-width: 300px; /*Backgroundun kaplayacağı alanı belirler.Bunu kullanmazsak uzun olan yazının backgroundu büyük olduğundan kötü bir görüntü ortaya çıkıyor.Bununla birlikte bütün menü yazılarının background boyutu aynı olur*/
+            text-decoration: none;
+            text-align: center;
+            height: 100px;
+            line-height: 100px;
+            font-size: 60px;
+            color: black;
+            font-family:"Helvetica Neue" ,Arial, Helvetica, sans-serif;
+        }
+        li a:hover{
+            background-color:darkgreen;
+        }
+        li:hover ul a{
+            background-color: f3f3f3;
+            color: black;
+            height: 70px;
+            line-height: 70px;
+        }
+        li:hover ul a:hover /*a:hover'ı eklemeden önce bütün elemanların rengi değişiyordu üzerine gelince a:hover ile birlikte sadece hover olduğumuz elemanın rengi değişiyor.*/{
+            background-color:black;
+            color: white;
+        }
+        li ul li{
+            display: block;
+            float: none;
+        }
+        li ul li a{
+            text-align: left;
+            min-width: 770px;
+            padding: 0 20px;
+        }
+        li ul{
+            display: none;
+        }
+        ul li a:hover + .hidden, .hidden:hover{
+            display: block;
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#">Anasayfa</a></li>
+        <li><a href="#">Hakkımızda</a></li>
+        <li>
+            <a href="#">Kurslar</a>
+                <ul class="hidden">
+                    <li><a href="#">Komple Uygulamalı Web </a></li>
+                    <li><a href="#">Phyton İle Makine Öğremesi </a></li>
+                    <li><a href="#">Frontend Backend </a></li>
+                </ul>
+        </li>
+        <li><a href="#">Makale</a></li>
+        <li><a href="#">İletişim</a></li>
+
+        
+    </ul>
+
+    
+</body>
+</html>

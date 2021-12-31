@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        width: 100%; 
+        border-collapse: collapse; /*Tablonun çizgileri arasındaki boşluğu sıfırlar.*/    
+    }
+    table td , table th{
+        border: 3px solid gray;
+        padding: 10px;
+
+        
+    }
+    table tr:nth-child(odd){ /* tr'nin sonunda eğer boşluk olursa satırları değil sutunları 1-3-5 şeklinde şeçiyor dikkat etmek gerekli.*/
+        background-color: rgb(189, 183, 189);
+    }
+    table tr:hover{
+        background-color: yellow;
+    }
+
+    table th{
+        font-size: 60px;
+        text-align: left;
+
+    }
+    .table-green th{
+        background-color: seagreen;
+        color: white;    
+    }
+    .table-blue th{
+        background-color: #2196f3;
+        color: white;          
+    }
+
+
+</style>
+
+<body>
+<table class="table-blue">
+    <thead>
+        <tr>
+            <th>Ürün ismi</th>
+            <th>Açıklama</th>
+            <th>Kalite 0-10</th>
+            <th>Fiyat</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Jant parlatıcı</td>
+            <td>Jantları mükemmel bir görünüme kavuşturur.</td>
+            <td>10/8</td>
+            <td>120tl</td>
+        </tr>
+        <tr>
+            <td>Cila</td>
+            <td>Aracı parlatır.</td>
+            <td>10/9</td>
+            <td>200tl</td>
+        </tr>
+        <tr>
+            <td>Boya koruyucu</td>
+            <td>Boyayı korur.</td>
+            <td>10/10</td>
+            <td>500tl</td>
+        </tr>
+        <tr>
+            <td>Seramik kaplama</td>
+            <td>Araç toz tutmaz.Çiziklerden korur.2 yıl etkili.</td>
+            <td>10/10</td>
+            <td>1000tl</td>
+        </tr>
+    </tbody>
+</table>
+
+    <hr> <!-- Düz çizgi çeker-->
+
+<table class="table-green">
+        <thead>
+            <tr>
+                <th>Ürün ismi</th>
+                <th>Açıklama</th>
+                <th>Kalite 0-10</th>
+                <th>Fiyat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jant parlatıcı</td>
+                <td>Jantları mükemmel bir görünüme kavuşturur.</td>
+                <td>10/8</td>
+                <td>120tl</td>
+            </tr>
+            <tr>
+                <td>Cila</td>
+                <td>Aracı parlatır.</td>
+                <td>10/9</td>
+                <td>200tl</td>
+            </tr>
+            <tr>
+                <td>Boya koruyucu</td>
+                <td>Boyayı korur.</td>
+                <td>10/10</td>
+                <td>500tl</td>
+            </tr>
+            <tr>
+                <td>Seramik kaplama</td>
+                <td>Araç toz tutmaz.Çiziklerden korur.2 yıl etkili.</td>
+                <td>10/10</td>
+                <td>1000tl</td>
+            </tr>
+        </tbody>
+</table>
+    
+
+    
+</body>
+</html>

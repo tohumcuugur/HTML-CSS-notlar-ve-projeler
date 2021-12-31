@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .header{
+            height: 95vh; /*vh view height yani görünür yükseklik değeri demektir. yani yüksekliğimiz sayfanın %95 ini kaplar %5 lik kısım boş kalır.Tarayıcıyı büyütsekte küçültsekte %5lik kısmı boş olarak ayarlar.*/
+            background-image:linear-gradient(rgba(204, 217, 255 , 0.3),
+            rgba(153, 179, 255 , 0.3)),
+            url(..//0-İmages/4.jfif); /*linear-gradient arka plana renkli geçiş vermemizi sağlar 2 renk olarak girdikten sonra renge opaklık olarak düşük bir değer gireriz. renkler w3 school color pickerden seçilebilir.*/
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center; /*Resmin arka planda gösterilmeye hangi kısımdan başlayacağı center seçtiğimizde resmin merkezini kordinat alarak sığdırı kadar olan bölümünü gösterir.Top ve bottom yazarsak oraları merkez alarak gösterir.Ve Aynı zamanda top bottom left right yazdığımızda top için sayfayı küçülttüğümüzde üst kısım sabit kalır aşağıdan daralı bottom için alt kısım sabit kalır yukarıdan aşağıya küçülür resim.*/
+            clip-path:polygon(0 0 , 100% 0 , 100% 100% , 0 85%);/*Kordinat girerek arka planı kesmemizi sağlar.(0 0  X TE 0 Y'DE SIFIR YANİ SOL KÖŞE, 100% 0  EN SAĞ ÜST , 100% 100%  EN SAĞ ALT, 0 85% SOLDAN %85 AŞAĞI X 0 OLDUGU İÇİN SOL KÖŞEDE BİR NOKTA DEMEK OLUYOR.)*/
+            position: relative;
+        }
+        .heading{
+            text-transform: uppercase;
+            color: white;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%,-50%);
+            font-family: sans-serif;
+        }
+        .headering-main{
+            font-size: 100px;
+            letter-spacing: 10px;
+            word-spacing: 2px;
+            display: block;
+           
+            
+        }
+        .headering-sub{
+            font-size: 80px;  
+            letter-spacing: 5px;
+            word-spacing: 2px;   
+            display: block;  
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="heading">
+            <span class="headering-main">YUNUSUN</span>
+            <span class="headering-sub">AMMUNA GOYUM</span>
+        </h1>       
+    </header>
+  
+</body>
+</html>

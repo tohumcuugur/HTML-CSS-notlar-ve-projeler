@@ -1,0 +1,18 @@
+#container-box{
+    width: 1140px;
+    background-color: darkred;
+    
+}
+.blogs{
+    width: 75%;
+    background-color: chartreuse;
+    float: left;
+}
+#other-posts{
+    background-color: cornflowerblue;
+    width: 25%;
+    float: left;
+}
+#outher-box{
+    border: 5px solid gray;
+}

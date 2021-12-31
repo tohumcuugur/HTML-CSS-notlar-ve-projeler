@@ -1,0 +1,88 @@
+body{
+    margin: 100px;
+    background-color: rgb(85, 81, 85);
+}
+.border{
+    border: 3px solid wheat;
+    padding: 20px;
+    margin-right: 50px;
+}
+.tooltip .text{
+    display: none;
+    background-color: black;
+    font-weight: bold;
+    color: cornsilk;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0px;
+    position: absolute;
+    z-index: 1; /*hover olduğunda çıkan yazının başka bir yazı olsa bile onun üstüne çıkmasını sağlar normalde z index 0 olarak gelir.*/
+}
+.tooltip:hover .text{
+    display: inline-block;
+}
+.tooltip{
+    position: relative;
+}
+.top::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-color: black transparent transparent transparent;
+    border-style: solid;
+}
+.bottom::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-color: transparent transparent black transparent;
+    border-style: solid;
+}
+.right::after{
+    content: "";
+    position: absolute;
+    top: 30%;
+    right: 100.4%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-color: transparent black transparent transparent;
+    border-style: solid;
+}
+.left::after{
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 104%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-color: transparent transparent transparent black;
+    border-style: solid;
+}
+.top{
+    bottom: 120%;
+    left: 50%;
+    margin-left: -60px;
+}
+.bottom{
+    top: 120%;
+    left: 50%;
+    margin-left: -60px;
+
+}
+.right{
+    bottom: 25%;
+    right: -92%;
+
+}
+.left{
+    top: 25%;
+    right: 100%;
+
+}

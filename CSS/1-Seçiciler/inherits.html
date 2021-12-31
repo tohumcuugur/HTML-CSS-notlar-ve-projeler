@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        body{ /*body'e verdiğimiz renk bütün heryere işler fakat a etiketi içine işlemez.yani miras olarak özellik kabul etmez buna css inherits denir.*/
+            color: green;
+            font-size: 50px; /*bodye font size verdiğimizde bütün değişkenleri orantılı olarak büyür.Örnek olarak h1 etiketi daha çok büyür çünkü orjinal boyutu zaten diğer nesnelerden daha büyüktür.*/
+        }
+
+        ul{
+            color: hotpink;
+            font-size: 40px;
+        }
+        li{
+            color: khaki;}
+
+        .orange{
+            color: orange;
+        }
+        #kahverengi{
+            color: brown;
+        }
+        a{
+            color: inherit;  /* ÖNEMLİ!!!!!!!!!!!!! a etiketinde color özelliğine inherit özelliği verirsen anchor yani atalardan gelen özelliği alır.*/
+            font-size: 50px;
+        }
+        span{
+            color: midnightblue;
+            font-size: 35px;
+            border: 3px solid brown;
+        }
+        #inherit{
+
+            color: inherit;
+
+        }
+            
+
+    </style>
+       
+
+<body>
+    <h1>Komple uygulamalı web geliştirme eğitimi</h1>
+
+    <ul>    
+        <li id="kahverengi" class="orange">HTML5</li> <!-- id ile verilen tag class'ı ezer ve renk kahverengi olur-->
+        <li>CSS</li>
+        <li>JAVASCRİPT</li>
+        <li><a href="#">Jquery</a></li>
+
+    </ul>
+
+    <div id="inherit" style="color: midnightblue;" >Lorem ipsum dolor <span> sit amet consectetur, adipisicing elit.</span> Aut cumque veritatis magni recusandae tempora nam dignissimos earum voluptate molestiae dolorem.</div>
+    <div style="color: midnightblue;">Lorem ipsum dolor <span> sit amet consectetur, adipisicing elit.</span> Aut cumque veritatis magni recusandae tempora nam dignissimos earum voluptate molestiae dolorem.</div>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+#gallery {
+    width: 1000px;
+    margin: 20px auto;
+}
+* {
+    box-sizing: border-box;/*border ve padding değerlerini box sizing yani maksimim widthe ekler padding eklersek taşma yaratır.*/
+}
+.images img{
+    width: 100%;
+    height: 200px;/*resimlerin yüksekliği ve genişliği farklı olduğunda kötü bir görüntü oluşabiliyor.Genişliği zaten konteynera sığacak kadar ayarladığımız için height yani yükseklik değeri verdiğimizde resimler aynı genişlik ve yüksekliğe geliyor fakat orantısı bozulduğu için ortaya kötü bir görüntü çıkıyor.Bunuda object fit ile çözebiliriz.En boy oranını bozmadan resmin etrafını keserek sığdırır.*/
+    object-fit:cover;
+    /*object-fit:contain; resmi olduğu gibi kırmadan sığdırır orjinalliğini bozmaz en boy oranında küçültür.*/
+    /*object-fit:fill; en boy oranını bozarak sığrırıyor varsayılan özellik*/
+    /*object-fit: none; resmi sığdırmaya çalışmaz kesmez olduğu gibi resmi koyar
+    object-position: 60% 60%; pozisyon ayarı yapar %60 %60 sağa yüzde 60 aşağı yüzde 60 git demektir*/
+
+    
+}
+.images img:hover{
+    opacity: 0.8;
+}
+.resim-yazı-container{
+    padding: 20px;
+    width: 25%;
+    float: left;
+   
+}
+
+.resim-yazı{
+    background-color:  rgb(138, 131, 131);
+    border: 1px solid chartreuse;
+    /*padding: 10px;Resimleri yanyana boşluklu bir şekilde gitirmek istiyoruz.Fakat padding ekledikçe border ve yazı arası mesafe küçülüyor çünkü box sizing değişmeden üzerine ekleme yapıyor.Bunun için boş div div oluşturup ona padding değeri vereceğiz .*/
+    
+}
+.resim-yazı:hover{  
+    border: 2px solid crimson;
+}
+.text p{
+    text-align: center;
+    padding: 20px;  
+}

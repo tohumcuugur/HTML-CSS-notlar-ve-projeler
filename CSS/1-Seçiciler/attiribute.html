@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute selectors</title>
+    <link rel="stylesheet" href="attiribute.css">
+</head>
+<!--second yani ikinci p[title] direk p olan bütün kısımları seçer ve uygular.p[title="third paragraph"] sacede üçüncü paragrafa uygular fakat title isminin birebir aynı olması gerekir. p[title~=second] isminde secdont bulunan bütün paragrafları seçer %%%%%%%%%%% a[href^=httpsss]{color: red;} ^nin anlamı httpsss ile başlayan kısımları seç demektir.%%%%%%%%%%%%%%%%%  a[href$=com]{color: seagreen;} $'ın anlamı com ile biten kısımları seç demektir.    -->
+<body>
+    <h1>Attribute Selecktörleri</h1>
+    <p>This paragraph without the title attribute.</p>
+    <p title="second paragraph">p[title] select all paragraphs containing a title attribute</p> 
+    <p title="third paragraph"> p[title~= select all paragraphs with a title attribute containing the word , paragraph]</p>
+    <p title="forth paragraph">p[title="# paragraph"] select all paragraphs with a title attribute containing the exact text , #4 paragraph. Matches are case-sensitive and must match letter-for-letter including whitespace</p>
+
+    <p><a href="httpsss://www.example.net" target="_blank"> example1 </a>
+        <a href="https://www.example.com" target="_blank"> example2 </a>
+    
+    </p>
+
+    
+</body>
+
+
+</html>

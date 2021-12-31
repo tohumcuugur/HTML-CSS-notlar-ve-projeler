@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: lightgray;
+            width: 200px;
+            height: 200px;
+            margin: 5px;
+            padding: 5px;    
+        }
+        #box1{
+           border-top: 1px solid gray;
+           border-right: 2px solid red;
+           border-bottom: 3px solid blueviolet;
+           border-left: 4px solid greenyellow;
+        }
+        #box2{
+            border-top-style: double;
+            border-right-style: groove; /*Bu zamana kadar çerçeveyi solid kullandık bunlar  çerçeve çeşitleri*/
+            border-bottom-style:dashed;
+            border-left-style:dotted;
+            border-radius: 50%;
+            border-width: 10px;
+            border-top-color: greenyellow;
+            border-right-color:indigo;
+            border-bottom-color:lightsalmon;
+            border-right-color: maroon;
+           /*
+            border-top: firebrick;
+            border-right:fuchsia;
+            border-bottom:goldenrod;
+            border-left:greenyellow;  Bu şekilde yazılırsa çalışmıyor. COLOR OLARAK DEĞİŞKEN BELİRTİLMELİ*/
+        }
+        #box3{
+            border-top: 2px solid blue;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 50px;   
+            border-bottom: 2px solid green;     
+        }
+        .mesaj{
+            height: 40px;
+            background:lightgreen;
+            padding-top: 20px;
+            margin-top: 5px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">Box1</div>
+    <div class="box" id="box2">Box2</div>
+    <div class="box" id="box3">Box3</div>
+    <div class="mesaj">Mesaj:</div>
+</body>
+</html>

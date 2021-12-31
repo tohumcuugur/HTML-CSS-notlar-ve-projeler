@@ -1,0 +1,13 @@
+#container-box{
+    width: 1140px;
+    background-color: darkred;
+    
+}
+.blogs{
+    width: 75%;
+    background-color: chartreuse;
+}
+#other-posts{
+    background-color: cornflowerblue;
+    width: 25%;
+}

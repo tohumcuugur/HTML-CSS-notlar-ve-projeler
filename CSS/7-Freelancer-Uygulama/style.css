@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: 'Bold' , sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+}
+h1 , h2 , h3 ,h4 ,h5 , h6{
+    font-weight: 700;
+    font-family: Montserrat;
+}
+.container {
+    width: 1740px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+ul{
+    list-style-type: none;
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+section{
+    padding-top: 10rem;
+    padding-bottom: 10rem; /*BU YENİ OLUŞTURDUĞUMUZ PORTFOİLONUN ALANININ ÖNCEKİ İÇERİK İLE 100PX SONRAKİ GELECEK İÇERİK İLE 100PX BOŞLUKLU OLMASINI SAĞLADIK.*/
+    text-align: center;
+}
+/*navbar*/
+nav{
+    background-color: #2B3C53;
+    color: #fff;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    font-family: Montserrat;
+    position: fixed;
+    width: 100%; /*fixed verdikten sonra width 100 vermez isek navbar küçük kalıyor.*/
+    z-index: 500; /*scroll barı kaydırdığımızda yıldız kısmı navbar'ın üstüne çıkıyordu.Bu şekilde yüksek bir değer vererek herhangi bir elemanın üste çıkmasının önüne geçmiş olduk.*/
+}
+#logo-box{
+    float: left;
+    padding-top: 0.5rem;
+}
+#logo-box .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 3.2rem;
+}
+#nav-links{
+    float: right;
+}
+#nav-links li{
+    float: left;
+    margin: 0.4rem;
+}
+#nav-links .nav-link{
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 1.6rem;
+    display: block; /*padding navlink inline eleman olduğu için sağdan soldan padding etkili oluyor sadece.bunu block yapıp üstten alttanda değer verebiliriz*/
+    letter-spacing: 0.1rem;
+    transition: color 0.3s;
+}
+#nav-links .nav-link:hover{
+    color: #18bc9c;
+}
+/*header*/
+header{
+    background-color: #18bc9c;
+    height: 800px;
+    padding-top: calc(112px + 10rem);
+    padding-bottom: 112px;
+    text-align: center;
+}
+header h1{
+    font-size: 7.6rem;
+    color: #fff;
+}
+header h2{
+    color: #fff;
+    font-size: 2.8rem;
+    font-family: 'Lato';
+    font-weight: 300;
+}
+hr.star-light{
+    border-color: #fff; /*!!!ÖNEMLİ!!!Eğer ki .star-light ya da .star-dark şeklinde border-color verirsek renk özelliği dikkat ederseniz border:none; özelliği tarafından eziliyor ancak hr.star-light şeklinde yani class i start-light olan hr dediğimizde daha özel bir seçim işlemi yaptığımızdan daha baskın hale geldi..*/
+}
+hr.star-dark{
+    border-color: #2B3C53;
+}
+.star-light ,.star-dark{
+    border: none; /*Tüm köşelerden borderları kaldırarak sadece top kısmına border ekleyip daha ince bir çizgi görüntüsü elde etmiş olduk.*/
+    border-top: 0.4rem solid ;
+    max-width: 25rem;
+    margin: 2.5rem auto; /*line'ı ortaladık ve üstten alttan 2.5rem margin verdik.*/
+    overflow: visible; /*yıldızı hr çizgisine kaydırdığımızda üst kısmı akışın altında kalıyordu.Bu şekilde akışta görünür yaptık.*/
+    height: 0px; /*yıldız bölümü 52px'lik bir yer kaplıyordu height 0 yaparak 4px'e indirdik.4pxte yukarda verdiğimiz 0.4rem'den geliyor.*/
+}
+.star-light::after{
+    color: #fff;
+    background-color: #18bc9c; /*background color vererek yıldızın etrafındaki hr çizgisiyle arasını açtık daha sonra padding değeri ile bu alanı büyüttük*/
+}
+.star-dark::after{
+    background-color: #fff;
+    color: #2B3C53;
+}
+.star-light::after ,.star-dark::after {
+    content: "\f005";
+    font-family: "FontAwesome";
+    font-size: 3.2rem;
+    position: relative;
+    top: -26px;
+    padding: 0px 8px;
+}
+/*Portfoilo*/
+#portfolio h2{
+    font-size: 4.8rem;
+    color: #2B3C53;
+}
+.col{
+    width: 33.333333%;
+    float: left;
+    padding: 10px;
+}
+.portfolio-item{
+    position: relative;
+}
+.portfolio-item img {
+    display: block;
+}
+.img-overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #18bc9c;
+    opacity: 0;
+    transition:opacity 0.5s ease;
+}
+.img-overlay .icon{
+    color: #fff;
+    font-size: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-30%); /*iconun boyutu üzerinden öteleme yapıyoruz büyüklüğünün %50si kadar sola git %30u kadar yukarı git*/
+}
+.portfolio-item:hover .img-overlay{
+    opacity: 0.7;
+}
+/*About*/
+#about{
+    background-color: #18bc9c;
+    color: white;
+}
+#about h2{
+    font-size: 4.8rem;
+}
+#about-text{
+    text-align: left;
+}
+#about .left{
+    float: left;
+    width: 50%;
+    padding-right: 2rem;
+    padding-left: 23rem;
+}
+#about .right{
+    float:right;
+    width: 50%;
+    padding-right: 23rem;
+    padding-left: 2rem;
+}

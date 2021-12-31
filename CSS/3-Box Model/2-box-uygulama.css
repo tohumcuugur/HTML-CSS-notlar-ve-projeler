@@ -1,0 +1,54 @@
+p{
+    font-size: 40px;
+}
+#container{
+    width: 100%; 
+}
+#oyuncular{
+    width: 70%;
+    float: left;
+}
+#yazar{
+    width: 25%;
+    float: right;
+    position: relative; /* Absolut.Tüm html sayfasına göre belirttiğimiz konuma göre yerleşir.Relative: sahip olduğu pozisyondan yukarı aşşağı sağa sola doğru ayarlama yapmamızı sağlar.Yani mevcut kapladığı alan üzerinden hareket ettiririz.*/
+    margin-top: 20px;
+    border-top: 1px solid RGB(0,0,0,.125); /*Yazar kısmının top yani üst kısmına ufak bir border ekledik*/
+}
+body{
+    background-color: lemonchiffon;
+}
+h1{
+    position: sticky; /*Scrool bar aşağı kayarken yazı onunla beraber gider genellikle menülerde kullanılır.*/
+    top: 20px;
+}
+div[id="yazar"] h2{
+    font-size: 70px; background-color:saddlebrown; border-radius: 20px; display: inline-block; margin: 8px; padding: 5px;   
+}
+div h2{
+    background-color:indianred; border-radius: 5px; display: inline-block;
+}
+div[id="yazar"] h3{
+    font-size: 40px; background-color: skyblue; padding: 5px; display: inline-block; border-radius: 5px;
+}
+div[id="yazar"]{
+    background-color:lightgreen;
+}
+div[id="oyuncular"] h1{
+    background-color: royalblue; border-radius: 20px; display: inline-block; padding: 20px;
+
+}
+div[id="oyuncular"] p{
+    background-color:darksalmon;
+}
+#yazar img{
+    border-radius: 50%;
+    border: 10px groove blue;
+}
+div[class="tolga"] p{
+    width: 75%;
+}
+div[class="tolga"] img{
+    width: 250px; height: 250px; border-radius: 50%; float: right; margin-top: 80px;
+    border: 10px dotted green;
+}

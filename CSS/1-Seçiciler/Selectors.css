@@ -1,0 +1,74 @@
+body{
+    font-size: 14px;
+    background-color: #f2f2f2;
+}
+h1{
+    border: 1px solid gray;
+    padding: 5px;
+}
+h2{
+    color: red;
+}
+h2.active{
+    border: 3px solid green;
+}
+p#paragraf{
+    font-size: 50px;
+}
+div h3{
+    background-color: gold;
+}
+h1~p{
+    background-color: red;  /*!!!!!!ÖNEMLİ!!!!!! Burda kullanılan tilda işareti h1 ile aynı seviyedeki p etiketlerini seçmemizi sağlar "h1 p " şeklinde yazsaydık h1 içindeki p elemanlarını seçerdi */
+}
+div>p {
+    background-color: green;   /*div içindeki tüm p etiketlerinin arka planını yeşil yapar. yani parent'ı div olan tüm p etiketlerini..!!!ALTINDAKİ!!!*/
+}
+ul li{
+    border: 1px solid gray;
+    margin-top: 2px;
+}
+.active{
+    background-color: gold;
+}
+
+ul li:first-child{
+    word-spacing: 20px;
+
+}
+ul :last-child{
+    letter-spacing: 20px;
+}
+
+ul li:nth-child(odd){
+    color:green;
+    font-size: 40px;
+}
+ul :nth-child(even){
+    color: orange;
+    font-size: 40px;
+}
+input[type="text"] , input[type="password"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type="submit"]{
+    width: 100%; /*SATIRIN TAMAMINI KAPLA*/
+    background-color: green;
+    color: white;
+    padding: 12px 18px; /*ÜSTTEN ALTTAN VE SAĞDAN SOLDAN BOŞLUK DEĞERİ*/
+    margin: 7px 0;
+    border: none;
+    border-radius: 10px;/* border kenarlarına radius verir. eğimli yapar*/
+    cursor: pointer; /*mause ile üstüne gelince el işareti çıkar*/
+}
+input[type="submit"]:hover{
+    background-color: #45a049; /*hover özelliği ekledik butonun üstüne gelince biraz daha açık yeşil bir renk gözüküyor.*/
+}
+ /*input type'ı text yani yazı yazma ve password yani şifre girne olan inputların sayfa üzerinde üstüne geldiğimizde. arka plan açık altın sarısı olur.yani yazı kısmına gelince rengi değişir*/
+input[type="text"]:focus,input[type="password"]:focus{
+    background-color: lightgoldenrodyellow;
+
+}
