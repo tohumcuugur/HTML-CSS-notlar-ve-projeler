@@ -185,12 +185,12 @@ hr.star-dark{
 #about .left{
     float: left;
     width: 50%;
-    padding-right: 2rem;
+    padding-right: 2.1rem;
     padding-left: 23rem;
 }
 #about .right{
     float:right;
     width: 50%;
     padding-right: 23rem;
-    padding-left: 2rem;
+    padding-left: 2.1rem;
 }
