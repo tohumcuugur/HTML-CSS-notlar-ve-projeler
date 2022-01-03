@@ -18,7 +18,7 @@ h1 , h2 , h3 ,h4 ,h5 , h6{
     font-family: Montserrat;
 }
 .container {
-    width: 1740px;
+    width: 1900px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 0.5rem;
@@ -254,4 +254,44 @@ hr.star-dark{
 }
 .form-group input:focus{
     outline: 0; /*formda bir kısma tıkladığımızda oluşan border'ı engeller.*/
+}
+/*footer*/
+footer{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+}
+.icons{
+    width: 8rem;
+    height: 8rem;
+    font-size: 4rem;
+    line-height: 2rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.icons:hover{
+    background-color: #fff;
+    color: #2B3C53;
+}
+footer h4{
+    font-size: 5rem;
+    font-weight: bold;
+}
+footer p{
+    font-size: 2rem;
+}
+
+footer li {
+    display: inline-block;
+    margin-right: 1.1rem;
+}
+.copyright{
+    background-color: #1a252f;
+    color: #fff;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    text-align: center;
+    font-weight: bold;
 }
