@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    /*
+    body , html{
+        height: 100%;
+    }
+    */
+    body{
+        background-color:rgb(223, 215, 215);
+    }
+    #header{
+        background-color:royalblue; /*Sayfanın arka plan resminin 50-60kb'ı geçmemesi tavsiye edilir.Eğer 4-5mb'lık bir resim kullanırsak.Sayfayı kullanıcı açarken resmi indirdiği için sayfa yavaş açılacaktır.Bu sebeple background resmi olmasına rağmen yine bir color vererek resim yüklenene kadar bir color göstermiş oluruz.Yada birkaç alternatif resim kullanılabilir.*/
+        height: 100vh; /*Eğer height değerini vh yani "viewport height" olarak verirsek body ve html'e herhangi bir yükseklik vermemize gerek kalmaz. ve kullanıcı tarayıcı boyutunun %100ünü doldurur.*/
+        width: 100vw; /*width değerine vw yani "viewport width" olarak verirsek kullanıcının gördüğü genişliğin yüzde 100 ini doldurur.*/
+        background-image: url(..//0-İmages/bg-3.jpg);
+        background-position: center;
+        /* background-position: 80% 90%; Sağdan soldan ve üstten alttan resmin hangi kısmını göstereceğimizi ayarlayabiliriz mesela %90 dediğimiz kısım yukarıdan aşağı %40 iner ve o kısmı gösterir.%50 dersek center demek ile aynı şey olur. 80 olan kısımda sağa doğru gider.*/
+        background-size: cover; /*Çevreve içerisine kadar resmi uzatır en boy oranını bozabilir. En sık kullanılan fonksiyondur.*/
+        /* background-size: contain; resmin en boy oranını koruyarak keser.Sayfada boşluk olmasına sebep olabilir.*/
+        /* background-size: 300px 300px; */
+        position: relative; /*Pozition relative verdiğimizde h1 etiketi hizalamasını bir üst eleman olan div etiketine göre yapar yani arka plan boyutu değiştiğinde h1 etiketi kendini otomatik hizalar.*/
+        background-attachment: fixed;
+        }
+    h1{
+        position: absolute;
+        font-size: 60px;
+        color:#fff;
+        background-color: black;
+        padding: 1.5rem;
+        
+    }
+    #header h1{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);  
+    }
+    .title-bg1 h1{
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50% , -50%);
+    }
+    .title-bg2 h1{
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50% , -50%);
+    }
+    .bg-opacity{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(87, 35, 185);
+        opacity: 0.1;
+    }
+    .title-bg1{
+        position: relative;
+        padding: 4rem;
+        color: rgba(77, 74, 74, 0.931);
+        background-image: url(..//0-İmages/bg-2.jpg);
+        background-position: center;
+        background-size: cover;
+        margin-top: 5rem;
+        width: 100vw;
+        height: 60vh;
+        background-attachment: fixed;
+    }
+    .title-bg2{
+        position: relative;
+        padding: 4rem;
+        color: rgba(77, 74, 74, 0.931);
+        background-image: url(..//0-İmages/bg-1.jpg);
+        background-position: center;
+        background-size: cover;
+        margin-top: 5rem;
+        width: 100vw;
+        height: 60vh;
+        background-attachment: fixed;
+    }
+    h3{
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+        letter-spacing: 0.01rem;
+        word-spacing: 0.1rem;
+        line-height: 1.5rem;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: bold;
+        padding-top: 3rem;
+        text-align: center;
+    }
+    p{
+        padding: 1rem;
+        font-size: 1.5rem;
+        letter-spacing: 0.01rem;
+        word-spacing: 0.1rem;
+        line-height: 1.8rem;
+        font-family:'Times New Roman', Times, serif;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        text-align: center;
+    }
+
+</style>
+<body>
+    <div id="header">
+        <h1>Lorem, ipsum.</h1>
+        <div class="bg-opacity"></div>
+    </div>
+    <div class="img-text">
+        <div class="text">
+            <h3>Lorem, ipsum.</h3>
+            <p>Dolor sit amet consectetur adipisicing elit. Aliquam quisquam nulla laborum suscipit, non maiores, debitis perferendis atque nemo corrupti assumenda iure eligendi repellat. Aut ex consequuntur quas nemo officiis, provident cupiditate? Itaque voluptatum saepe voluptate, repellendus quasi, assumenda placeat sit cum perferendis aliquam porro beatae hic, architecto vero libero praesentium aperiam impedit consequuntur. Distinctio vel excepturi numquam magni et, provident atque. Animi accusantium aliquid adipisci molestias consequuntur expedita aliquam facere, sit esse iusto fuga iste ducimus voluptatem soluta odio eaque ipsa magni quasi. Explicabo iure odit, optio ex cumque exercitationem natus dolorum vel dicta enim vero dignissimos porro ipsam quae odio ea voluptatem fugit ut obcaecati officiis asperiores veritatis incidunt reiciendis impedit. Laboriosam dolore qui esse provident ratione sit aliquid magnam cum voluptate. Ad, consectetur harum. Debitis, libero doloremque eius temporibus vero omnis nesciunt odio, inventore molestiae quod adipisci nostrum unde sint? Facere exercitationem laboriosam error, minus deserunt magni.</p>
+        </div>
+        <div class="title-bg1">
+            <h1>Lorem, ipsum.</h1>
+        </div>
+        <div class="text">
+            <h3>Lorem, ipsum.</h3>
+            <p>Dolor sit amet consectetur adipisicing elit. Aliquam quisquam nulla laborum suscipit, non maiores, debitis perferendis atque nemo corrupti assumenda iure eligendi repellat. Aut ex consequuntur quas nemo officiis, provident cupiditate? Itaque voluptatum saepe voluptate, repellendus quasi, assumenda placeat sit cum perferendis aliquam porro beatae hic, architecto vero libero praesentium aperiam impedit consequuntur. Distinctio vel excepturi numquam magni et, provident atque. Animi accusantium aliquid adipisci molestias consequuntur expedita aliquam facere, sit esse iusto fuga iste ducimus voluptatem soluta odio eaque ipsa magni quasi. Explicabo iure odit, optio ex cumque exercitationem natus dolorum vel dicta enim vero dignissimos porro ipsam quae odio ea voluptatem fugit ut obcaecati officiis asperiores veritatis incidunt reiciendis impedit. Laboriosam dolore qui esse provident ratione sit aliquid magnam cum voluptate. Ad, consectetur harum. Debitis, libero doloremque eius temporibus vero omnis nesciunt odio, inventore molestiae quod adipisci nostrum unde sint? Facere exercitationem laboriosam error, minus deserunt magni.</p>
+        </div>
+        <div class="title-bg2">
+            <h1>Lorem, ipsum.</h1>
+        </div>
+    </div>
+</body>
+</html>

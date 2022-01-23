@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    /*
+    body , html{
+        height: 100%;
+    }
+    */
+    #header{
+        background-color:royalblue; /*Sayfanın arka plan resminin 50-60kb'ı geçmemesi tavsiye edilir.Eğer 4-5mb'lık bir resim kullanırsak.Sayfayı kullanıcı açarken resmi indirdiği için sayfa yavaş açılacaktır.Bu sebeple background resmi olmasına rağmen yine bir color vererek resim yüklenene kadar bir color göstermiş oluruz.Yada birkaç alternatif resim kullanılabilir.*/
+        height: 100vh; /*Eğer height değerini vh yani "viewport height" olarak verirsek body ve html'e herhangi bir yükseklik vermemize gerek kalmaz. ve kullanıcı tarayıcı boyutunun %100ünü doldurur.*/
+        width: 100vw; /*width değerine vw yani "viewport width" olarak verirsek kullanıcının gördüğü genişliğin yüzde 100 ini doldurur.*/
+        background-image: url(..//0-İmages/bg.jpg);
+        background-position: center;
+        /* background-position: 80% 90%; Sağdan soldan ve üstten alttan resmin hangi kısmını göstereceğimizi ayarlayabiliriz mesela %90 dediğimiz kısım yukarıdan aşağı %40 iner ve o kısmı gösterir.%50 dersek center demek ile aynı şey olur. 80 olan kısımda sağa doğru gider.*/
+        background-size: cover; /*Çevreve içerisine kadar resmi uzatır en boy oranını bozabilir. En sık kullanılan fonksiyondur.*/
+        /* background-size: contain; resmin en boy oranını koruyarak keser.Sayfada boşluk olmasına sebep olabilir.*/
+        /* background-size: 300px 300px; */
+        position: relative; /*Pozition relative verdiğimizde h1 etiketi hizalamasını bir üst eleman olan div etiketine göre yapar yani arka plan boyutu değiştiğinde h1 etiketi kendini otomatik hizalar.*/
+        
+        }
+    h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 100px;
+        color:tomato;
+        transform: translate(-50% , -50%);  
+    }
+    .bg-opacity{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(87, 35, 185);
+        opacity: 0.1;
+    }
+
+</style>
+<body>
+    <div id="header">
+        <h1>Background text</h1>
+        <div class="bg-opacity"></div>
+    </div>
+    
+</body>
+</html>
