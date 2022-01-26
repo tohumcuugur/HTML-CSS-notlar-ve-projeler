@@ -5,9 +5,8 @@
     font-family: sans-serif;
 }
 .container{
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+    width: 1200px;
+    margin: auto auto;
 }
 html{
     scroll-behavior:smooth;
@@ -37,7 +36,6 @@ a{
 }
 .logo-box a{
     font-size: 2rem;
-    margin-left: 6rem;
 }
 .logo-box a:hover{
     background-color: #28425E;
@@ -50,15 +48,13 @@ a{
 .nav-links li{
     float: left;
     margin-right: 2rem;
-}.nav-links ul{
-    margin-right: 6rem;
 }
 .nav-links a{
     font-size: 1.5rem;
 }
 .nav-links li{
     list-style-type: none;
-    margin-right: 3rem;
+    /* margin-right: 3rem; */
 }
 .nav-links li a:hover{
     color: #28425E;
@@ -280,4 +276,52 @@ main{
     border:none;
     background-color:#FF8C76;
     color: #fff;
+}
+.footer{
+    height: 15vh;
+    background-color: #28425E;
+    width: 100%;
+}
+.left-side{
+    display: inline-block;
+}
+.left-side li{
+    float: left;
+    margin-left: 2rem;
+    list-style-type: none;
+    font-size: 1.5rem;
+    margin-top: 3.5rem;
+    position: relative;
+    top: 0px;
+}
+.left-side li:hover{
+    font-size:2rem;
+    top: -0.5rem;
+}
+.left-side ul{
+    margin-left: 5rem;
+}
+.right-side{
+    float: right;
+}
+.icons-1{
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.icons-1:hover{
+    background-color: #fff;
+    color: #2B3C53;
+}
+.right-side ul{
+    margin-right: 10rem;
+}
+.right-side li{
+    float: left;
+    list-style-type: none;
+    margin-top: 2rem;
+    margin-right: 1rem;
 }
