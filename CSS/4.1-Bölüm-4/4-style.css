@@ -4,15 +4,17 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-.container{
-    width: 1200px;
-    margin: auto auto;
-}
 html{
     scroll-behavior:smooth;
+    font-size: 62.5%;
 }
 body{
     background-color: #85808028;
+    font-size:1.2rem;
+}
+.container{
+    width: 100%;
+    margin: auto auto;
 }
 .clearfix{
     content: "";
@@ -50,7 +52,7 @@ a{
     margin-right: 2rem;
 }
 .nav-links a{
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 .nav-links li{
     list-style-type: none;
@@ -63,10 +65,9 @@ a{
     background-image:
     linear-gradient(to right, rgba(221, 48, 17, 0.3), rgba(82, 67, 219, 0.3)),
     url(..//0-İmages/back-ground-uyg/bg.jpeg);
-    height: 90vh;
+    height: 40vh;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
     position: relative;
 }
 .text{
@@ -75,21 +76,21 @@ a{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    width: 70rem;
+    width: 25rem;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 1rem;
 }
 .text h1,span{
     color: #fff;
 }
 .text h1{
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
     opacity: 1;
 }
 .text span{
     margin-top: 4rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .hiw-text{
     text-align: center;
@@ -103,6 +104,10 @@ a{
 .hiw-text p{
     font-size: 1.5rem;
 }
+.icon-side{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
 .icon-side i{
     font-size: 5rem;
 }
@@ -110,7 +115,7 @@ a{
     font-size: 1rem;
 }
 .icons{
-    width: 20rem;
+    width: 100%;
     display: inline-block;
     margin-top: 3rem;
 }
@@ -120,8 +125,10 @@ a{
 }
 .icons h2{
     padding-top: 1rem;
+    font-size: 3rem;
 }
 .icons p{
+    font-size: 2rem;
     margin-top: 1rem;
     font-style:inherit;
     text-align: center;
@@ -129,18 +136,20 @@ a{
 .features{
     height: 20rem;
     background-color: #cdd1d352;
+    margin-top: 55rem;
+    margin-bottom: 40rem;
 }
 .features-bg{
     background-image: linear-gradient(to right, rgba(221, 48, 17, 0.3), rgba(82, 67, 219, 0.3)), url(..//0-İmages/back-ground-uyg/features.jpeg);
-    height: 20rem;
-    width: 48%;
+    height: 30vh;
+    width: 100%;
     background-position: top;
     background-size: cover;
     display: inline-block;
 }
 .features-text{
     float: right;
-    width: 50%;
+    width: 100%;
     text-align: left;
     padding-left: 2rem;
 }
@@ -166,9 +175,9 @@ a{
     border: 2px solid #28425E;
 }
 .member{
-    height: 66vh;
     text-align: center;
     margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 .member-selectors{
     display: inline-block;
@@ -181,6 +190,10 @@ a{
     padding-top: 3rem;
     padding-left:1rem;
     padding-right:1rem;
+}
+.media-div{
+    width: 100%;
+    margin-bottom: 2rem;
 }
 #center-selector{
     background-color: #376BA8;
@@ -223,37 +236,52 @@ a{
 main{
     text-align: center;
     background-color: #FF8C76;
-    height: 18vh;
+    padding: 1rem;
+}
+.media-main{
+    margin-bottom: 4rem;
 }
 .col{
     width: 33.33333333%;
     float: left;
-    margin-top: 3em;
 }
 .movies{
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-bottom: 2rem;
-    height: 75vh;
+}
+.movies h1{
+    font-size: 4rem;
 }
 .movies-container{
-    margin-top: 2rem;
+    margin-top: 4rem;
     transition: all 1s;
+    text-align: center;
 }
 .movies-container .col-1:hover{
     box-shadow: 2rem 2rem 2rem 2rem #888
 }
 .col-1{
-    display: inline-block;
+    display: block;
     width:300px;
     background-color: #fff;
     border-radius: 1rem;
     padding-bottom: 1rem;
-    margin-right: 1rem;
+    text-align: center;
     position: relative;
     top: 0px; /* EĞER BAŞLANGIÇ KONUMU BELİRTİLMEZSE AŞAĞIDA BELİRTTİĞİMİZ TOP: -15PX; DEĞERİ ÇALIŞMAZ. */
     transition: 1s;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+
 }
+/* .col-1 img{
+    width: 300px;
+    height: 300px;                        YÜKSEKLİK AYARLAMAK İÇİN KULLANILABİLİR.
+    object-fit: cover;
+    object-position: center;
+} */
 .col-1:hover{
     top: -15px;
     /* transform: translateY(-10px); */
@@ -265,6 +293,7 @@ main{
 .col-1 h1 , p{
     margin-top: 1.5rem;
     margin-bottom: 1rem;
+    font-size: 2rem;
 }
 .but{
     padding-top: 0.4rem;
@@ -277,20 +306,22 @@ main{
     background-color:#FF8C76;
     color: #fff;
 }
-.footer{
-    height: 15vh;
-    background-color: #28425E;
+footer{
     width: 100%;
+    background-color: #28425E;
+    padding-bottom: 6rem;
 }
 .left-side{
-    display: inline-block;
+    float: left;
+    width: 50%;
+    margin-bottom: 1rem
 }
 .left-side li{
     float: left;
     margin-left: 2rem;
     list-style-type: none;
     font-size: 1.5rem;
-    margin-top: 3.5rem;
+    margin-top: 1.3rem;
     position: relative;
     top: 0px;
 }
@@ -298,17 +329,17 @@ main{
     font-size:2rem;
     top: -0.5rem;
 }
-.left-side ul{
-    margin-left: 5rem;
-}
+
 .right-side{
     float: right;
+    width: 50%;
+    margin-bottom: 1rem
 }
 .icons-1{
-    width: 4rem;
-    height: 4rem;
-    font-size: 2rem;
-    line-height: 2rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.7rem;
+    line-height: 1.5rem;
     border-radius: 50%;
     border: 2px solid #fff;
 }
@@ -316,12 +347,262 @@ main{
     background-color: #fff;
     color: #2B3C53;
 }
-.right-side ul{
-    margin-right: 10rem;
-}
+
 .right-side li{
-    float: left;
+    float: right;
     list-style-type: none;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-right: 1rem;
+}
+/*---------------------------MEDİA QUERİES-----------------------------*/
+@media(min-width:576px){
+    .container{
+        width: 540px;
+        margin: 0 auto;
+    }
+    html{
+        font-size: 8px;
+    }
+    .bg{
+        height: 45vh; 
+    }
+    .movies{
+        margin-top: 4rem;
+    }
+    .features{
+        height: 20rem;
+        background-color: #cdd1d352;
+        margin-top: 25rem;
+        margin-bottom: 33rem;
+    }
+    .text{
+        width: 30rem;
+    }
+}
+@media(min-width:768px){
+    .container{
+        width: 720px;
+        margin: 0 auto;
+    }
+    html{
+        font-size: 9px;
+    }
+    .bg{
+        height: 50vh; 
+    }
+    .movies{
+        margin-top: 4rem;
+    }
+    .features{
+        height: 20rem;
+        background-color: #cdd1d352;
+        margin-top: 25rem;
+        margin-bottom: 35rem;
+    }
+    .features-bg{
+        height: 35vh;
+    }
+    .text{
+        width: 30rem;
+    }
+    .text{
+        width: 35rem;
+    }
+}
+@media(min-width:992px){
+    .container{
+        width: 960px;
+        margin: 0 auto;
+    }
+    html{
+        font-size: 10px;
+    }
+    .bg{
+        height: 55vh; 
+    }
+    .movies{
+        margin-top: 4rem;
+    }
+    .features{
+        height: 20rem;
+        background-color: #cdd1d352;
+        margin-top: 26rem;
+        margin-bottom: 36rem;
+    }
+    .features-bg{
+        height: 40vh;
+    }
+    .text{
+        width: 40rem;
+    }
+}
+@media(max-width:1200px){
+    .features-text{
+        background-color: #cdd1d352;
+    }
+}
+@media(min-width:1200px){
+    .container{
+        width: 1140px;
+        margin: 0 auto;
+    }
+    html{
+        font-size: 11px;
+    }
+    .bg{
+        height: 80vh; 
+    }
+    .movies{
+        margin-top: 4rem;
+    }
+    .icons{
+        width: 32.99999999999999999999999999999%;
+        display: inline-block;
+        margin-top: 3rem;
+    }
+    .media-div{
+        width: 32.333333333333333333333333333%;
+        display: inline-block;
+        margin-bottom: 2rem;
+    }
+    .col-1{
+        display: inline-block;
+        width:300px;
+        background-color: #fff;
+        border-radius: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        position: relative;
+        top: 0px; /* EĞER BAŞLANGIÇ KONUMU BELİRTİLMEZSE AŞAĞIDA BELİRTTİĞİMİZ TOP: -15PX; DEĞERİ ÇALIŞMAZ. */
+        transition: 1s;
+        margin-bottom: 2rem;
+        margin-right: 1rem;
+    }
+    .features{
+        height: 40vh;
+    }
+    .features-bg{
+        width: 50%;
+    }
+    .features-text{
+        float: right;
+        width: 50%;
+        text-align: left;
+        padding-left: 2rem;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .features{
+        background-color: #cdd1d352;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .hiw-text{
+        height: 50vh;
+    }
+    .text{
+        width: 45rem;
+    }
+}
+@media(min-width:1400px){
+    .container{
+        width: 1320px;
+        margin: 0 auto;
+    }
+    html{
+        font-size: 12px;
+    }
+    .bg{
+        height:65vh; 
+    }
+    .movies{
+        margin-top: 4rem;
+    }
+    .features-bg{
+        height: 50vh;
+    }
+    .features{
+        height: 50vh;
+    }
+}
+@media(min-width:1600px){
+    .container{
+        width: 1540px;
+        margin: 0 auto;
+    }
+    html{
+        font-size: 13px;
+    }
+    .bg{
+        height: 70vh; 
+    }
+    .movies{
+        margin-top: 4rem;
+    }
+    .features-bg{
+        height: 55vh;
+    }
+    .features{
+        height: 55vh;
+    }
+}
+@media(min-width:1800px){
+    .container{
+        width: 1720px;
+        margin: 0 auto;
+    }
+    html{
+        font-size: 14px;
+    }
+    .bg{
+        height: 75vh; 
+    }
+    .movies{
+        margin-top: 4rem;
+    }
+}
+@media(min-width:2000px){
+    .container{
+        width: 1900px;
+        margin: 0 auto;
+    }
+    html{
+        font-size: 15px;
+    }
+    .bg{
+        height: 80vh; 
+    }
+    .movies{
+        margin-top: 4rem;
+    }
+}
+@media(min-width:2200px){
+    .container{
+        width: 2100px;
+        margin: 0 auto;
+    }
+    html{
+        font-size: 16px;
+    }
+    .bg{
+        height: 85vh; 
+    }
+    .movies{
+        margin-top: 4rem;
+    }
+}
+@media(min-width:2400px){
+    .container{
+        width: 2280px;
+        margin: 0 auto;
+    }
+    html{
+        font-size: 18px;
+    }
+    .bg{
+        height: 85vh; 
+    }
+    .movies{
+        margin-top: 4rem;
+    }
 }
