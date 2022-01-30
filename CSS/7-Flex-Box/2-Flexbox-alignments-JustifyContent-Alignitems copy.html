@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            /* flex-direction: row; ÖNEMLİ!!! VARSAYILAN OLARAK ROW GELİR VE AŞAĞIDAKİ İŞLEMLERİ YAPARIZ.YANİ YATAYDA JUSTİFY CONTENT DİKEYDA ALİGN İTEMS KULLANIYORUZ. FLEX DİRECTİON COLUMN YAPARSAK DİKETDE JUSTİFY CONTENT YATAYDA ALİGN-İTEMS KULLANRIZ  */
+
+            /* justify-content: center; */
+            /* justify-content: center; */
+            /* justify-content: flex-start; Default özelliği sayfanın en başına alır elemanları */
+            /* justify-content: flex-end; Elemanlar sayfanın en sonuna gelir */
+
+            /* justify-content: space-around; Elemanlar arası boşluk bırakır.Üst ve alt aralıklar dahil.Üst ve alt kenar boşlukları daha kısadır. */
+            /* justify-content: space-between; Elemanların üst ve alt konumlarını değiştirmeden aralarında boşluk bırakır.Üst ve alt kenar boşlukları daha kısadır. */
+            /* justify-content: space-evenly; Üst ve alt dahil heryer'den eşit boşluk bırakır */
+
+            /* align-items: stretch; Varsayılan özelliktir. */
+            /* align-items: flex-start; Elemanlar içerik kadar yer kaplar */
+            /* align-items: flex-end; Elemanlar konteynerın en altına gelir */
+            /* align-items: center;  */
+            flex-direction: column;
+            /* align-items: flex-start ; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-between; */
+
+
+
+        
+
+            
+            height: 500px;
+            background-color: lightcoral;
+            /* padding:15px; */
+        }
+        .item{
+            background-color: lightskyblue;
+            padding: 20px;
+            /* margin: 25px; */
+            color: #fff;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+    </div>
+    
+</body>
+</html>

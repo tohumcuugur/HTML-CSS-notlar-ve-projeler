@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+
+            height: 500px;
+            background-color: lightcoral;
+            /* padding:15px; */
+        }
+        .item{
+            background-color: lightskyblue;
+            padding: 20px;
+            margin: 25px;
+            color: #fff;
+            font-size: 25px;
+            /* flex: 0; Grow özelliğini kapatır içerik kadar yer kaplar*/
+            /* flex: 0 0;  shrink özelliğinide 0 yaptık. */
+            /* flex: 0 0 200px; */
+           
+        }
+        .item-1{
+            /* flex-grow: 1; */
+            flex: 25%;
+            order: 3; /*Sıralamada kullanıyoruz.*/
+        }
+        .item-2{
+            /* flex-grow: 2; */
+            flex: 25%;
+            order: 2;
+        }
+        .item-3{
+            /* flex-basis: 200px; */
+            /* flex-shrink: 0; flex-shrink özelliğini 0 verirsek sayfa daralsa bile verdiğimiz 200pixel değişmez ve scrool bar çıkar.Varsayılan özelliği 1'dir.Yani normalde sayfa daraldığında yer kalmayınca 200px'de küçükür ve item-3 divimiz içerik kadar yer kaplar. */
+            flex: 50%;
+            order: 1;
+        }
+        /* .item-4{
+            flex-basis: 1;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">item1</div>
+        <div class="item item-2">item2</div>
+        <div class="item item-3">item3</div>
+        <!-- <div class="item item-4">item4</div> -->
+    </div>
+    
+</body>
+</html>
