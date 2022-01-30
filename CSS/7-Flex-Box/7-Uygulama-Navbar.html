@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            background-color: goldenrod;
+            padding: 0 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        nav a{
+            font-size: 20px;
+            color: #fff;
+            align-self: center;
+            padding: 11px;
+        }
+        
+        .navigation{
+            list-style: none;
+            display: flex;
+        }
+        .navigation a{
+            display: block;
+            padding: 20px;
+        }
+        .navigation a:hover{
+           background-color: rgb(134, 107, 39);
+        }
+        .navigation li:last-child{
+                display: none;
+            }
+      
+        @media (max-width:600px){
+            nav{
+                flex-direction: column; /*600px'e kadar olan boyutlarda logo üstte menü seçenekleri altında gözükür.Yani kendini kolon yapar*/
+                position: relative;
+            }
+            nav a{
+                align-self: flex-start;
+            }
+            .navigation{
+                flex-direction: column; /*600px altında navigation class'ının yani ul'nin altındaki tüm elemanlar kendilerini kolon yapar ve tek tek aşağı doğru menü şeklinde güzel bir görüntü oluşur.*/
+            }
+            .navigation a{
+                text-align: center;
+                padding: 10px;
+                border-top: 1px solid rgba(255, 255, 255, 0.3);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            }
+            .navigation li:last-child{
+                display: block;
+                position: absolute;
+                top: 0px;
+                right: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="responsive">
+        <a href="#">Logo</a>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">
+                <i class="fas fa-bars"></i>
+            </a></li>
+        </ul>
+    </nav>
+</body>
+</html>
