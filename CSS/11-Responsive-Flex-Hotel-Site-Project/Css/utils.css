@@ -117,7 +117,7 @@
 .btn-outline-primary:hover{
     background-color: var(--primary);
     border: 1px solid var(--primary);
-    color: var(--white);
+    color: var(--white); 
 }
 /*flex items*/
 .flex-items{
