@@ -7,6 +7,7 @@
 }
 html{
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 body{
     font-size: 1.6rem;
@@ -79,6 +80,10 @@ img{
    height: 100vh;
    color: #fff;
    position: relative;
+}
+.main-header.blog{ /*main header ve blog aynı anda varsa. veya blog klasına sahip olan main-header*/
+    background-image: url(../Flex-hotel-site-img/bg-2.jpeg);
+    height: 50vh;
 }
 .main-header .content{
     display: flex;
@@ -186,6 +191,14 @@ img{
 .contact h2{
     font-size: 4rem;
 }
+/* article */
+.articles{
+    padding: 3rem 5rem;
+}
+.article{
+    margin-top: 1.5rem;
+    color: #fff;
+}
 /* footer */
 .footer{
     display: flex;
@@ -201,4 +214,22 @@ img{
 }
 .footer a:hover{
     opacity: 0.7;
+}
+/* Mobile */
+@media (max-width:768px){
+    html{
+        font-size: 8px;
+    }
+    .navbar{
+        flex-direction: column;
+        height: 120px;
+        padding: 20px;
+    }
+    .navbar a{
+        padding: 10px;
+        margin: 0 3px;
+    }
+    .teams img{
+        width: 70%;
+    }
 }

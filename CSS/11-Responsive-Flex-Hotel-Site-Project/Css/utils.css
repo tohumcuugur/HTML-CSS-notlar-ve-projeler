@@ -143,6 +143,12 @@
 .flex-columns .column{
     flex: 1; /*kolonlara aynı genişliği verdik*/
 }
+.article.flex-columns .column:nth-child( ){
+    flex: 2;
+}
+.article.flex-columns .column:nth-child(even){
+    flex: 3;
+}
 .flex-columns .column .column-1{
     height: 100%;
 }
@@ -189,4 +195,19 @@
 .gallery img:hover{
     opacity: 0.8;
     cursor: pointer;
+}
+@media (max-width:768px){
+    .flex-items{
+        flex-direction: column;
+    }
+    .flex-items > div{
+        padding: 10px;
+    }
+    .flex-columns .column{
+        flex:100%;
+    }
+    .flex-grid .column{
+        flex: 50%;
+    }
+
 }
