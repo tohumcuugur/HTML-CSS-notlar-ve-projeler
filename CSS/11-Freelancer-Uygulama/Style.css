@@ -1,0 +1,282 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 35px;
+    font-family: 'Nunito' , sans-serif;
+    background-color: #36343446;
+}
+html{
+    font-size: 16px;
+}
+.container-1{
+    width: 1800px;
+    height: 3900px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.icon{
+    font-size: 1rem;
+    padding-top: 1.5rem;
+    float: left;
+    padding-right: 5rem;
+    padding-left: 2;
+    color: #9aa0a5;
+    padding-bottom: 2rem;
+    
+}
+a{
+    text-decoration: none;
+    color: #9aa0a5;
+    transition: all 1s;
+}
+.icon a:hover{
+    color:rgb(35, 120, 200);
+}
+h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.logo{
+    width: 12rem;
+}
+p{
+    font-size: 1rem;
+    letter-spacing: 0.03rem;
+    word-spacing: 0.1rem;
+    line-height: 1.7rem;
+}
+.margin{
+    margin-left: 30rem;
+}
+.left-side-bar{
+    width: 300px;
+    height: 3900px;
+    float: left;
+    background-color: #F0F4F7;
+    padding-left: 2rem;
+    text-align: left;
+}
+.left-top-bar{
+    padding-top: 2rem;
+}
+.left-top-bar p{
+    color: #9aa0a5;
+    padding-top: 2rem;
+}
+.left-bottom-bar{
+    padding-top: 2rem;
+}
+.left-bottom-bar a{
+    color: rgb(59, 56, 56);
+    text-decoration: none;
+}
+.left-bottom-bar h4{
+    padding-top: 5rem;
+    padding-left: 4rem;
+    color: #5b5f62;
+}
+ul li{
+    list-style-type: none;
+    padding: 1rem;
+    padding-top: 1rem;
+    font-weight: bold;
+}
+.title{
+    width: 80rem;
+}
+.title h1{
+    padding-top: 2.5rem;
+    
+    font-size: 2rem;
+}
+.title p{
+    padding-top: 2rem;
+    color: #9aa0a5;
+    
+}
+.content{
+    width: 70%;
+}
+.side-bar{
+    width: 30%;
+}
+.container-2{
+    margin-top: 2rem;
+}
+.post-img img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    transition: all 1s;
+}
+.post-img img:hover{
+    opacity: 0.7;
+}
+.post-img p{
+    color: rgb(90, 92, 95);
+}
+.btn{
+    margin-top: 1rem;
+    padding: 0.6rem;
+    color: rgb(83, 145, 202);
+    background-color: #fff;
+    border: 2px solid rgb(83, 145, 202);
+}
+.btn:hover{
+    color: #fff;
+    background-color:rgb(83, 145, 202) ;
+}
+hr{
+    background-color: #9aa0a5;
+    opacity: 0.3;
+    height: 1px;
+    border: none;
+    margin-top: 1rem;
+}
+.pages{
+    margin-top: 2rem;
+}
+.pages li{
+    float: left;
+}
+.pages ul li{
+    padding: 0.2rem;
+}
+button{
+    padding: 0.8rem 1rem ;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(90, 92, 95);
+    border: 2px solid #9aa0a5;
+    border-radius: 0.2rem;
+}
+ul li button:hover{
+    background-color: rgb(90, 92, 95);
+    color: #fff;
+}
+ul li:nth-child(2) button{
+    background-color: rgb(90, 92, 95);
+    color: #fff;
+}
+.right-side-bar
+{
+    width: 25rem;
+    height: 200rem;
+    position: absolute;
+    top: 15rem;
+    right: 4rem;
+}
+.search-box{
+    float: none;
+}
+.search-box input[type="text"]{
+    width: 18rem;
+    height: 3rem;
+    margin-right: 8rem;
+    padding-left: 1rem;
+    border: 1px solid rgb(90, 92, 95);
+    z-index: border 5;
+}
+.search-box button{
+    position: absolute;
+    top: 4.5px;
+    right: 8.3rem;
+    padding: 4px 10px;
+    background: #fff;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+.about h3{
+    margin-top:2rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.about hr{
+    margin-top: 1rem;
+}
+.about img{
+    width: 10rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+.about p{
+    padding-right: 3rem;
+    text-align: center;
+    padding-top: 1rem;
+    letter-spacing: 0.01rem;
+    word-spacing: 0.01rem;
+    font-size: 0.8;
+    color: rgb(90, 92, 95);
+}
+.subscribe h3{
+    margin-top: 4rem;
+}
+.col ul li{
+    padding: 0px;
+    margin: 0px;
+}
+.icons{
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    line-height: 1rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: rgba(47, 48, 49, 0.678);
+    color: #fff;
+    float: left;
+    margin-right: 0.8rem;
+    margin-top: 2rem;
+}
+.categories h3{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.categories li a:hover{
+    color: aqua;
+}
+.popular-posts img{
+    width: 120px;
+    margin-top: 1rem;
+    float: left;
+    padding-right: 1rem;
+}
+.popular-posts a:hover{
+    color: aqua;
+}
+.widget p {
+    padding-top: 1rem;
+    color: rgb(90, 92, 95);
+}
+.archives h3{
+    padding-top: 2rem;
+}
+.archives li a{
+    font-size: 0.9rem;
+    color: rgb(90, 92, 95);
+}
+.archives li a:hover{
+   color: aqua;
+}
+.tags h3{
+    padding-top: 2rem;
+}
+.tags a{
+    display: inline-block;
+    margin: 0.6rem;
+    padding: 0.5rem;
+    background-color:rgba(147, 153, 158, 0.678) ;
+    color: #fff;
+}

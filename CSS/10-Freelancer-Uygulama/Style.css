@@ -1,282 +1,362 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-body{
-    margin: 35px;
-    font-family: 'Nunito' , sans-serif;
-    background-color: #36343446;
-}
 html{
-    font-size: 16px;
+    font-size: 6px;
 }
-.container-1{
-    width: 1800px;
-    height: 3900px;
-    background-color: #FFFFFF;
-    position: relative;
+body{
+    font-family: 'Bold' , sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+}
+h1 , h2 , h3 ,h4 ,h5 , h6{
+    font-weight: 700;
+    font-family: Montserrat;
+}
+.col{
+    width: 100%;
+    float: left;
+    padding: 1rem;
+}
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+@media (min-width:576px){
+    .container{
+        max-width: 540px    ;
+    }
+    html{
+        font-size: 7px;
+    }
+}
+@media (min-width:768px){
+    .container{
+        max-width: 720px;
+    }
+    html{
+        font-size: 8px;
+    }
+    .col{
+        width: 50%;
+    }
+}
+@media (min-width:992px){
+    .container{
+        max-width: 960px;
+    }
+    html{
+        font-size: 9px;
+    }
+    .col{
+        width: 33.333333333333%;
+    }
+}
+@media (min-width:1200px){
+    .container{
+        max-width: 1140px;
+    }
+    html{
+        font-size: 10px;
+    }
+    
+}
+@media (min-width:1550px){
+    .container{
+        max-width: 1480px;
+    }
+    html{
+        font-size: 13px;
+    }
+}
+@media (min-width:1555px){
+    .container{
+        max-width: 1500px;
+    }
+    html{
+        font-size: 13px;
+    }
+}
+@media (min-width:1750px){
+    .container{
+        max-width: 1650px;
+    }
+    html{
+        font-size: 13px;
+    }
+}
+
+ul{
+    list-style-type: none;
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
 }
 .clearfix::after{
     content: "";
     display: block;
     clear: both;
 }
-.icon{
-    font-size: 1rem;
-    padding-top: 1.5rem;
+section{
+    padding-top: 10rem;
+    padding-bottom: 10rem; /*BU YENİ OLUŞTURDUĞUMUZ PORTFOİLONUN ALANININ ÖNCEKİ İÇERİK İLE 100PX SONRAKİ GELECEK İÇERİK İLE 100PX BOŞLUKLU OLMASINI SAĞLADIK.*/
+    text-align: center;
+}
+/*navbar*/
+nav{
+    background-color: #2B3C53;
+    color: #fff;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    font-family: Montserrat;
+    position: fixed;
+    width: 100%; /*fixed verdikten sonra width 100 vermez isek navbar küçük kalıyor.*/
+    z-index: 500; /*scroll barı kaydırdığımızda yıldız kısmı navbar'ın üstüne çıkıyordu.Bu şekilde yüksek bir değer vererek herhangi bir elemanın üste çıkmasının önüne geçmiş olduk.*/
+}
+#logo-box{
     float: left;
-    padding-right: 5rem;
-    padding-left: 2;
-    color: #9aa0a5;
-    padding-bottom: 2rem;
-    
+    padding-top: 0.5rem;
 }
-a{
-    text-decoration: none;
-    color: #9aa0a5;
-    transition: all 1s;
+#logo-box .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 3.2rem;
 }
-.icon a:hover{
-    color:rgb(35, 120, 200);
+#nav-links{
+    float: right;
 }
-h3{
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-.logo{
-    width: 12rem;
-}
-p{
-    font-size: 1rem;
-    letter-spacing: 0.03rem;
-    word-spacing: 0.1rem;
-    line-height: 1.7rem;
-}
-.margin{
-    margin-left: 30rem;
-}
-.left-side-bar{
-    width: 300px;
-    height: 3900px;
+#nav-links li{
     float: left;
-    background-color: #F0F4F7;
-    padding-left: 2rem;
-    text-align: left;
+    margin: 0.4rem;
 }
-.left-top-bar{
-    padding-top: 2rem;
+#nav-links .nav-link{
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 1.6rem;
+    display: block; /*padding navlink inline eleman olduğu için sağdan soldan padding etkili oluyor sadece.bunu block yapıp üstten alttanda değer verebiliriz*/
+    letter-spacing: 0.1rem;
+    transition: color 0.3s;
 }
-.left-top-bar p{
-    color: #9aa0a5;
-    padding-top: 2rem;
+#nav-links .nav-link:hover{
+    color: #18bc9c;
 }
-.left-bottom-bar{
-    padding-top: 2rem;
+/*header*/
+header{
+    background-color: #18bc9c;
+    height: 800px;
+    padding-top: calc(112px + 10rem);
+    padding-bottom: 112px;
+    text-align: center;
 }
-.left-bottom-bar a{
-    color: rgb(59, 56, 56);
-    text-decoration: none;
+header h1{
+    font-size: 7.6rem;
+    color: #fff;
 }
-.left-bottom-bar h4{
-    padding-top: 5rem;
-    padding-left: 4rem;
-    color: #5b5f62;
+header h2{
+    color: #fff;
+    font-size: 2.8rem;
+    font-family: 'Lato';
+    font-weight: 300;
 }
-ul li{
-    list-style-type: none;
-    padding: 1rem;
-    padding-top: 1rem;
-    font-weight: bold;
+hr.star-light{
+    border-color: #fff; /*!!!ÖNEMLİ!!!Eğer ki .star-light ya da .star-dark şeklinde border-color verirsek renk özelliği dikkat ederseniz border:none; özelliği tarafından eziliyor ancak hr.star-light şeklinde yani class i start-light olan hr dediğimizde daha özel bir seçim işlemi yaptığımızdan daha baskın hale geldi..*/
 }
-.title{
-    width: 80rem;
+hr.star-dark{
+    border-color: #2B3C53;
 }
-.title h1{
-    padding-top: 2.5rem;
-    
-    font-size: 2rem;
+.star-light ,.star-dark{
+    border: none; /*Tüm köşelerden borderları kaldırarak sadece top kısmına border ekleyip daha ince bir çizgi görüntüsü elde etmiş olduk.*/
+    border-top: 0.4rem solid ;
+    max-width: 25rem;
+    margin: 3rem auto; /*line'ı ortaladık ve üstten alttan 2.5rem margin verdik.*/
+    padding: 2px;
+    overflow: visible; /*yıldızı hr çizgisine kaydırdığımızda üst kısmı akışın altında kalıyordu.Bu şekilde akışta görünür yaptık.*/
+    height: 0px; /*yıldız bölümü 52px'lik bir yer kaplıyordu height 0 yaparak 4px'e indirdik.4pxte yukarda verdiğimiz 0.4rem'den geliyor.*/
 }
-.title p{
-    padding-top: 2rem;
-    color: #9aa0a5;
-    
+.star-light::after{
+    color: #fff;
+    background-color: #18bc9c; /*background color vererek yıldızın etrafındaki hr çizgisiyle arasını açtık daha sonra padding değeri ile bu alanı büyüttük*/
 }
-.content{
-    width: 70%;
+.star-dark::after{
+    background-color: #fff;
+    color: #2B3C53;
 }
-.side-bar{
-    width: 30%;
+.star-light::after ,.star-dark::after {
+    content: "\f005";
+    font-family: "FontAwesome";
+    font-size: 3.2rem;
+    position: relative;
+    top: -20px;
+    padding: 0px 8px;
 }
-.container-2{
-    margin-top: 2rem;
+/*Portfoilo*/
+#portfolio h2{
+    font-size: 4.8rem;
+    color: #2B3C53;
 }
-.post-img img{
+.portfolio-item{
+    position: relative;
+}
+.portfolio-item img {
+    display: block;
+}
+.img-overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
     width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 0.5rem;
-    margin-bottom: 2rem;
-    transition: all 1s;
+    background-color: #18bc9c;
+    opacity: 0;
+    transition:opacity 0.5s ease;
 }
-.post-img img:hover{
+.img-overlay .icon{
+    color: #fff;
+    font-size: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-30%); /*iconun boyutu üzerinden öteleme yapıyoruz büyüklüğünün %50si kadar sola git %30u kadar yukarı git*/
+}
+.portfolio-item:hover .img-overlay{
     opacity: 0.7;
 }
-.post-img p{
-    color: rgb(90, 92, 95);
+/*About*/
+#about{
+    background-color: #18bc9c;
+    color: white;
+}
+#about h2{
+    font-size: 4.8rem;
+}
+#about-text{
+    text-align: left;
+}
+#about .left{
+    float: left;
+    width: 50%;
+    padding-right: 2.1rem;
+    padding-left: 10rem;
+}
+#about .right{
+    float:right;
+    width: 50%;
+    padding-right: 10rem;
+    padding-left: 2.1rem;
 }
 .btn{
-    margin-top: 1rem;
-    padding: 0.6rem;
-    color: rgb(83, 145, 202);
-    background-color: #fff;
-    border: 2px solid rgb(83, 145, 202);
-}
-.btn:hover{
+    display: inline-block;
     color: #fff;
-    background-color:rgb(83, 145, 202) ;
-}
-hr{
-    background-color: #9aa0a5;
-    opacity: 0.3;
-    height: 1px;
-    border: none;
-    margin-top: 1rem;
-}
-.pages{
-    margin-top: 2rem;
-}
-.pages li{
-    float: left;
-}
-.pages ul li{
-    padding: 0.2rem;
-}
-button{
-    padding: 0.8rem 1rem ;
-    font-size: 1rem;
-    font-weight: bold;
-    color: rgb(90, 92, 95);
-    border: 2px solid #9aa0a5;
-    border-radius: 0.2rem;
-}
-ul li button:hover{
-    background-color: rgb(90, 92, 95);
-    color: #fff;
-}
-ul li:nth-child(2) button{
-    background-color: rgb(90, 92, 95);
-    color: #fff;
-}
-.right-side-bar
-{
-    width: 25rem;
-    height: 200rem;
-    position: absolute;
-    top: 15rem;
-    right: 4rem;
-}
-.search-box{
-    float: none;
-}
-.search-box input[type="text"]{
-    width: 18rem;
-    height: 3rem;
-    margin-right: 8rem;
-    padding-left: 1rem;
-    border: 1px solid rgb(90, 92, 95);
-    z-index: border 5;
-}
-.search-box button{
-    position: absolute;
-    top: 4.5px;
-    right: 8.3rem;
-    padding: 4px 10px;
-    background: #fff;
-    font-size: 1.5rem;
-    border: none;
+    background-color: transparent;
+    border-radius: 1rem;
     cursor: pointer;
-    z-index: 1;
+    font-weight: 400;
+   
 }
-.about h3{
-    margin-top:2rem;
-    font-size: 1rem;
-    font-weight: 600;
+.btn-1{
+    padding: 2.5rem;
+    margin: 4.5rem auto;
+    border: 0.2rem solid #fff;
+    font-size: 2.1rem;
+    transition: all 0.5s;
 }
-.about hr{
-    margin-top: 1rem;
-}
-.about img{
-    width: 10rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-}
-.about p{
+.btn-2{
+    color: black;
+    font-size: 2rem;
+    background-color:#18bc9c;
+    padding: 2rem;
+    padding-left: 3rem;
     padding-right: 3rem;
+    margin: 0.1rem auto;
+    float: left;
+    border: transparent;
+    transition: all 0.5s;
+}
+.btn-2:hover{
+    background-color: black;
+    color: white;
+}
+.btn-1:hover{
+    background-color: #fff;
+    color: black;
+    border-color: black;
+}
+/*contact*/
+#contact h2 {
+    font-size: 4.8rem;
+    color: #2c3e50;
+}
+#contact-form{
+    width: 70%;
+    margin: 0px auto;
+}
+.form-group{
+    border-bottom: 2px solid #cdd0d3;
+    padding-bottom: 1.5rem;
+    margin-bottom: 4rem;
+}
+.form-group input , .form-group textarea{
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    display: inline-block;
+    font-size: 2.4rem;
+}
+.form-group input:focus{
+    outline: 0; /*formda bir kısma tıkladığımızda oluşan border'ı engeller.*/
+}
+/*footer*/
+footer{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #2c3e50;
+    color: #fff;
     text-align: center;
-    padding-top: 1rem;
-    letter-spacing: 0.01rem;
-    word-spacing: 0.01rem;
-    font-size: 0.8;
-    color: rgb(90, 92, 95);
-}
-.subscribe h3{
-    margin-top: 4rem;
-}
-.col ul li{
-    padding: 0px;
-    margin: 0px;
 }
 .icons{
-    width: 3rem;
-    height: 3rem;
-    font-size: 1.5rem;
-    line-height: 1rem;
+    width: 8rem;
+    height: 8rem;
+    font-size: 4rem;
+    line-height: 2rem;
     border-radius: 50%;
     border: 2px solid #fff;
-    background-color: rgba(47, 48, 49, 0.678);
-    color: #fff;
-    float: left;
-    margin-right: 0.8rem;
-    margin-top: 2rem;
 }
-.categories h3{
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+.icons:hover{
+    background-color: #fff;
+    color: #2B3C53;
 }
-.categories li a:hover{
-    color: aqua;
+footer h4{
+    font-size: 3rem;
+    font-weight: bold;
 }
-.popular-posts img{
-    width: 120px;
-    margin-top: 1rem;
-    float: left;
-    padding-right: 1rem;
+footer p{
+    font-size: 2rem;
 }
-.popular-posts a:hover{
-    color: aqua;
-}
-.widget p {
-    padding-top: 1rem;
-    color: rgb(90, 92, 95);
-}
-.archives h3{
-    padding-top: 2rem;
-}
-.archives li a{
-    font-size: 0.9rem;
-    color: rgb(90, 92, 95);
-}
-.archives li a:hover{
-   color: aqua;
-}
-.tags h3{
-    padding-top: 2rem;
-}
-.tags a{
+
+footer li {
     display: inline-block;
-    margin: 0.6rem;
-    padding: 0.5rem;
-    background-color:rgba(147, 153, 158, 0.678) ;
+    margin-right: 1.1rem;
+}
+.copyright{
+    background-color: #1a252f;
     color: #fff;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    text-align: center;
+    font-weight: bold;
 }
