@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 5px; /*bütün row ve columnlar arasında boşluk bırakır*/
+        }
+        .header{
+            grid-column: 1 / span 3;
+            text-align: center;
+            background-color: red;
+        }
+        .content{
+            grid-column: 1 /span 2;
+        }
+        .footer{
+            grid-column: 1 / span 3;
+            background-color: red;
+        }
+        li{
+           list-style-type: none;
+        }
+        .box-1{
+            grid-column: 1 /span 3;
+        }
+        .box-3{
+            grid-column: 2 /span 2;
+        }
+        .header , .content , .side-bar , .box-1 , .box-2 , .box-3 , .footer{
+            border: 2px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Page Header</h1>
+        </header>
+        <section class="content">
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ipsa perferendis, totam debitis in minus eius consequuntur optio dolorum dolor perspiciatis sed fuga. Eum eveniet magnam, alias veniam quaerat excepturi.</p>
+        </section>
+        <section class="side-bar">
+            <h2>Lorem, ipsum.</h2>
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+            </ul>
+        </section>
+        <div class="box-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure illo magni consectetur eaque id. Libero deserunt aut exercitationem dolore facilis amet, atque cum veniam dolor molestias, ipsa laborum sint.</div>
+        <div class="box-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure illo magni consectetur eaque id. Libero deserunt aut exercitationem dolore facilis amet, atque cum veniam dolor molestias, ipsa laborum sint.</div>
+        <div class="box-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure illo magni consectetur eaque id. Libero deserunt aut exercitationem dolore facilis amet, atque cum veniam dolor molestias, ipsa laborum sint.</div>
+        <footer class="footer">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
