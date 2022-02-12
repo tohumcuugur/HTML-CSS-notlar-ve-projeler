@@ -126,7 +126,7 @@
     text-align: center;
     height: 100%;
 }
-.flex-items > div{ /* > işaretini kullanmazsak flex-items altındaki tüm değerlere padding uygulamış oluruz.Bu şekilde bi altındaki div'e padding bermiş olduk.*/
+.flex-items > div{ /* > işaretini kullanmazsak flex-items altındaki tüm değerlere padding uygulamış oluruz.Bu şekilde bi altındaki div'e padding vermiş olduk.*/
     padding: 20px;
     flex-basis: 100%; /*Tanımlanan alanın tamamını doldur olarak kulanılır*/
 }

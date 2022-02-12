@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3 , 20%); /*toplam sayfa genişliğinin %60ını kaplar */
+            grid-template-rows: repeat(2 , 20%); /*toplam sayfa yüksekliğinin %40ını kaplar*/
+            gap: 10px;
+            background-color: yellow;
+            height: 600px;
+            /* justify-items: stretch; */
+            /* justify-items: stretch; varsayılan özelliktir. elemanları kapladığı yüksekliğe göre aşağı doğru uzatır*/
+            /* justify-items: center; */
+            /*  justify-items: center; yatayda hizalama için kullanılır. eleman kadar genişlik alır*/
+            /* justify-items: start;  elemanlar başlangıç noktasına hizanır sola doğru*/
+            /* justify-items: end; */
+
+            /* align-items: stretch; varsayılan özelliktir yatayda ve dikeyde içinde bulunduğu konteyneri kaplar */
+            /* align-items: center; dikeyda hizalama için kullanılır tam oraya alır. */
+            /* align-items: start;  */
+            /* align-items: end;  */
+
+            /* justify-content: start; */
+            /* justify-content: center; */
+            /* justify-content: end; */
+
+            /* align-content: flex-start; */
+            /* align-content: center; */
+            /* align-content: flex-end; */
+
+            justify-content: center;
+            align-content: center; 
+    
+        }
+        .item{
+            background-color: orangered;
+        }
+        .item:first-child{
+            /* align-self: flex-start; */
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Box-1</div>
+        <div class="item">Box-2</div>
+        <div class="item">Box-3</div>
+        <div class="item">Box-4</div>
+        <div class="item">Box-5</div>
+        <div class="item">Box-6</div>
+    </div>
+</body>
+</html>

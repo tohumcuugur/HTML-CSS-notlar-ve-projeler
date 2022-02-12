@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            gap: 10px;
+            /* grid-template-columns: minmax(200px,1fr) 1fr 1fr; */
+            /* minmax(200px,1fr) minimum 200px alır tarayıcı boyutu arttığında 1fr değerini alır. minmax(200px,500px) 200px değerini aldığında tarayıcı boyutu daha fazla artarsa 500px'e kadar boyutu artabilir.*/
+            /* grid-template-columns: repeat(3 , minmax(200px , 1fr)); */
+            grid-template-columns: repeat(auto-fill , minmax(200px ,1fr));
+            /*EĞER 1 TARAYICI BOYUTU 700PX İSE AUTO-FİLL VERDİĞİMİZDE 3*200DEN 3 KUTU 600PX KAPLAR KALAN 100PX EŞİT DAĞILIR FAKAT BOYUT 800PX İSE 4 KUTULUK YER OLDUĞU İÇİN 200PX'LİK ALAN BOŞ KALIR VE 3 KUTU 3*200'DEN 600PX LİK YER KAPLAMAYA DEVAM EDER. EĞER 900PX İSE 3*200DEN 600PX DOLAR 200PX'LİK YER OLDUĞU İÇİN KUTU GELECEKMİŞ GİBİ BOŞ KALIR KALAN 100PX İSE EŞİT OLARAK DAĞITILIR. */
+            /* repeat(auto-fill , minmax(200px , 1fr)); auto fill yaptığımızda 3 kutu ilk satıra yerleşir ve 200px değerinde olur toplam genişlik 600px in aşağısına düştüğünde 1 kutu bir  alt satıra 400ün aşağısına düştüğünde her satırda 1 kutu olur. kutuların genişliği verdiğimiz değer olan 200px olarak verilir. */
+            /* grid-template-columns: repeat(auto-fit , minmax(200px , 1fr)); */
+            /* auto fit dediğimiz için kutuların genişliğin 1fr'a göre maximum değerde verilir.*/
+            /* grid-template-columns: repeat(auto-fit , minmax(200px ,400px)); */
+            /* eğer auto-fit veya auto-fill dediğimizde sabit bir max genişlik verirsek 400px gibi bu sabit genişliğe göre değer alır yani 400px olarak sayfada karşımıza çıkar. auto fillde 1fr şeklinde minmax verirsek min değer olanı alır. auto-fit'te 1fr verirsek 1fr alır yani max genişlik alır */
+        }
+        .item{
+            background-color: orangered;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Box-1</div>
+        <div class="item">Box-2</div>
+        <div class="item">Box-3</div>
+    </div>
+</body>
+</html>
