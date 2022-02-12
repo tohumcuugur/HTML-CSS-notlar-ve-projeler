@@ -1,1 +1,1 @@
-Bu bölümde css çalışmalarım yer almaktadır.Sürekli olarak güncellemekteyim.
+Bu bölümde Html,Css,Sass,Bootstrap çalışmalarım yer almaktadır.Sürekli olarak güncellemekteyim.
