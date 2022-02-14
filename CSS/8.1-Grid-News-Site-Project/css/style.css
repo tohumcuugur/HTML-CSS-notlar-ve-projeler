@@ -3,7 +3,7 @@
     --secondary-color: #2a9d8f;
     --light-color: #f9f9fa;
     --dark-color: #6c757d;
-    --max-width: 1100px;
+    --max-width: auto;
 }
 *{
     padding: 0;
@@ -221,7 +221,9 @@ p{
 #main-footer .footer-container ul li a:hover{
    color: var(--primary-color);
 }
-
+#main-footer .footer-container:nth-child(2){
+    margin-right: 50rem;
+}
 /* Article Details */
 
 .page-container{
