@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>animate.css</title>
+
+    <style>
+        div{
+            width: 150px;
+            height: 200px;
+            background-color: blueviolet;
+        }
+        .animasyon-deneme{
+            background-color: brown;
+            animation: lightSpeedInRight;
+            animation-duration: 2s; /*animasyon süresinin girilmesi gerekiyor.Bu şekilde klasslara kendimiz animasyon tanımlayabiliriz. tekrar gecikme sayısı gibi özelleştirmeler için kullanılır.*/
+            /* animation-delay: 1s; gecikme vermek için kullanılır. */
+        }
+        .animate__animated.animate__bounce {
+            --animate-duration: 4s; /*hazır olarak tanımladığımız animasyonlar üzerindede özelleştirme yapabiliriz. tanımladığımız animasyonun süresini 2 saniye olarak değiştirdik*/
+        }
+    </style>
+</head>
+<body>
+    <h1 class="animate__animated animate__bounce">An animated element</h1>
+    <div class="animate__animated animate__wobble animate__delay-5s"></div> <!-- animate__delay-5s bu şekilde class'lara da değişken verebiliriz. -->
+    <div class="animasyon-deneme"></div>
+</body>
+</html>
