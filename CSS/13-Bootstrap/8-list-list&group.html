@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>List- List & Group</title>
+</head>
+<body class="w-75 mx-auto my-4">
+    <ul class="list-unstyled">  <!--list style'de verilen özellikleri kaldırır.-->
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit.</li>
+    </ul>
+
+    <br><br>
+
+   <ul class="list-inline">  <!-- liste elemanlarını yanyana getirmek için kullanılabilir. -->
+        <li class="list-inline-item">Lorem, ipsum.</li>
+        <li class="list-inline-item">Lorem, ipsum.</li>
+        <li class="list-inline-item">Lorem, ipsum.</li>
+    </ul>
+    
+    <br><br>
+
+    <ul class="list-group">
+        <li class="list-group-item active">Lorem, ipsum dolor.</li> <!--active class'ı verilen elemanların background-color mavi color beyaz olarak atanır.-->
+        <li class="list-group-item">Lorem, ipsum dolor.</li>
+        <li class="list-group-item active">Lorem, ipsum dolor.</li>
+        <li class="list-group-item">Lorem, ipsum dolor.</li>
+    </ul>
+
+    <br><br>
+
+    <ul class="list-group">
+        <li class="list-group-item disabled">Lorem, ipsum dolor.</li> <!-- disabled veriler elemanların yazı fontu biraz daha silik bir hal alır.-->
+        <li class="list-group-item">Lorem, ipsum dolor.</li>
+        <li class="list-group-item disabled">Lorem, ipsum dolor.</li>
+        <li class="list-group-item">Lorem, ipsum dolor.</li>
+    </ul>
+
+    <div class="list-group w-50">
+        <a href="#" class="list-group-item list-group-item-action active">Lorem, ipsum.</a>
+        <a href="#" class="list-group-item  list-group-item-action">Lorem, ipsum.</a><!-- list-group-item-action active veya disabled classına sahip olmayanlara hover özelliği ekler.-->
+        <a href="#" class="list-group-item list-group-item-action disabled">Lorem, ipsum.</a>
+        <a href="#" class="list-group-item list-group-item-action">Lorem, ipsum.</a>
+    </div>
+    
+    <br><br>
+
+    <ul class="list-group list-group-flush"> <!-- en üst sağ ve solda ki border çizgilerini siler. sadece elemanların altında border çizgileri bulunur-->
+        <li class="list-group-item">Lorem, ipsum dolor.</li>
+        <li class="list-group-item">Lorem, ipsum dolor.</li>
+        <li class="list-group-item">Lorem, ipsum dolor.</li>
+        <li class="list-group-item">Lorem, ipsum dolor.</li>
+    </ul>
+
+    <br><br>
+
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-primary"> Lorem, ipsum dolor.</li>
+        <li class="list-group-item list-group-item-secondary"> Lorem, ipsum dolor.</li>
+        <li class="list-group-item list-group-item-success"> Lorem, ipsum dolor.</li>
+        <li class="list-group-item list-group-item-danger"> Lorem, ipsum dolor.</li>
+        <li class="list-group-item list-group-item-info"> Lorem, ipsum dolor.</li>
+        
+    </ul>
+</body>
+</html>
