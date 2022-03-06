@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse&Accordion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <style>
+       body{
+           padding: 70px;
+       }
+    </style>
+</head>
+<body>
+    <button class="btn btn-primary mb-3" data-bs-toggle="collapse" data-bs-target="#deneme">Deneme</button>
+    <div class="collapse" id="deneme">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, perferendis iste nam minima labore eius molestiae beatae ab aliquid quibusdam ratione ad dolor voluptate vel nobis sapiente, et id. Excepturi?
+    </div>
+
+    <br><br>
+
+    <a href="#deneme1" class="btn btn-secondary" data-bs-toggle="collapse" >Deneme</a>
+    <div class="collapse" id="deneme1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi ex tempora, dolores temporibus ducimus voluptatibus alias at excepturi illum magni? Labore inventore necessitatibus expedita iste quos harum corporis eos nesciunt!</div>
+ 
+    <br><br>
+
+    <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#deneme2">DENEME</button>
+    <div class="collapse show" id="deneme2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia eaque reprehenderit cum tenetur sint magnam tempore, neque culpa voluptatem, rerum porro doloribus, illo nostrum hic cupiditate saepe. Sint, nostrum voluptates?</div>
+    
+    <br><br>
+
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header">
+                <a href="#deneme3" data-bs-toggle="collapse" class="btn btn-warning">Deneme</a>
+            </div>
+            <div class="collapse show"  id="deneme3" data-bs-parent="#accordion">
+                <div class="card-body " >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae aspernatur ratione a maiores voluptatum asperiores veniam quam, inventore ipsum quas optio eligendi maxime rerum perspiciatis fugit dignissimos, architecto doloremque magni.
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <a href="#deneme4" data-bs-toggle="collapse" class="btn btn-danger">Deneme</a>
+            </div>
+            <div class="collapse"  id="deneme4" data-bs-parent="#accordion"> 
+                <div class="card-body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae aspernatur ratione a maiores voluptatum asperiores veniam quam, inventore ipsum quas optio eligendi maxime rerum perspiciatis fugit dignissimos, architecto doloremque magni.
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <a href="#deneme5" data-bs-toggle="collapse" class="btn btn-info">Deneme</a>
+            </div>
+            <div class="collapse"  id="deneme5" data-bs-parent="#accordion">
+                <div class="card-body" >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae aspernatur ratione a maiores voluptatum asperiores veniam quam, inventore ipsum quas optio eligendi maxime rerum perspiciatis fugit dignissimos, architecto doloremque magni.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <a href="#deneme6" class="btn btn-secondary mb-2" data-bs-toggle="collapse">Deneme</a>
+    <div class="collapse collapse-horizontal" id="deneme6" style="min-height: 120px;">
+        <div class=" card card-body" style="width: 300px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi ex tempora, dolores temporibus ducimus voluptatibus alias at excepturi illum magni? Labore inventore necessitatibus expedita iste quos harum corporis eos nesciunt!   
+        </div>
+    </div>
+</body>
+</html>
